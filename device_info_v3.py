@@ -12,7 +12,7 @@ def getSnList(command):
     action = os.popen(command)
     device_list = action.read()
     action.close()
-    sn_list = device_list.split('\n')
+    sn_list = device_list.split("\n")
     return sn_list
 
 def _List(command):
